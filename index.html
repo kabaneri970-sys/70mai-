@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>70mai OmniCam 3K Smart Dashcam | Jerry Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init','1202889101065810');
+        fbq('track','PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1202889101065810&ev=PageView&noscript=1"/></noscript>
+    <script>
+        tailwind.config={theme:{extend:{fontFamily:{sans:['Plus Jakarta Sans','sans-serif']}}}}
+    </script>
+    <style>
+        *{font-family:'Plus Jakarta Sans',sans-serif;scroll-behavior:smooth}
+        ::-webkit-scrollbar{width:5px}
+        ::-webkit-scrollbar-track{background:#f5f5f5}
+        ::-webkit-scrollbar-thumb{background:#ccc;border-radius:3px}
+        ::-webkit-scrollbar-thumb:hover{background:#999}
+        .fade-in{animation:fadeIn .6s ease forwards;opacity:0}
+        @keyframes fadeIn{to{opacity:1}}
+        .slide-up{animation:slideUp .5s ease forwards}
+        @keyframes slideUp{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
+        .toast-in{animation:toastIn .3s ease forwards}
+        @keyframes toastIn{from{transform:translateY(100%);opacity:0}to{transform:translateY(0);opacity:1}}
+        .toast-out{animation:toastOut .3s ease forwards}
+        @keyframes toastOut{from{opacity:1}to{transform:translateY(100%);opacity:0}}
+        .modal-overlay{animation:overlayIn .3s ease forwards}
+        @keyframes overlayIn{from{opacity:0}to{opacity:1}}
+        .modal-content{animation:modalSlide .4s ease forwards}
+        @keyframes modalSlide{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
+        input:focus,select:focus,textarea:focus{outline:none;border-color:#111;box-shadow:0 0 0 2px rgba(17,17,17,0.1)}
+        .feature-img{transition:transform .5s ease}
+        .feature-img:hover{transform:scale(1.02)}
+        .copy-btn{transition:all .2s}
+        .copy-btn:hover{background:#111;color:#fff}
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+<!-- HEADER -->
+<header class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-gray-900 rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-sm">J</span>
+            </div>
+            <span class="font-bold text-lg tracking-tight">Jerry Store</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8 text-sm text-gray-500">
+            <a href="#produk" class="hover:text-gray-900 transition-colors">Produk</a>
+            <a href="#deskripsi" class="hover:text-gray-900 transition-colors">Deskripsi</a>
+            <a href="#fitur" class="hover:text-gray-900 transition-colors">Fitur</a>
+            <a href="#spesifikasi" class="hover:text-gray-900 transition-colors">Spesifikasi</a>
+            <a href="#garansi" class="hover:text-gray-900 transition-colors">Garansi</a>
+        </nav>
+        <button onclick="openOrderForm()" class="bg-gray-900 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-gray-800 transition-all hover:scale-105 active:scale-95">
+            Pesan Sekarang
+        </button>
+    </div>
+</header>
+
+<!-- MAIN -->
+<main class="pt-16">
+
+    <!-- PRODUCT SECTION -->
+    <section id="produk" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+
+            <!-- Image Gallery -->
+            <div class="fade-in">
+                <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 mb-4">
+                    <img id="mainImage" src="https://z-cdn-media.chatglm.cn/files/8c8d89fe-f1da-4471-b75f-82d921143ca1.jpg?auth_key=1880414878-81a3f75804ac46f886c2f023d48105a7-0-e2c385dcef84005a667bf99d9714c27d" alt="70mai OmniCam 3K" class="w-full aspect-square object-contain p-4 transition-all duration-500">
+                </div>
+                <div class="grid grid-cols-4 gap-3">
+                    <button onclick="changeImage(0)" class="gallery-thumb bg-gray-50 rounded-xl overflow-hidden border-2 border-gray-900 aspect-square cursor-pointer hover:border-gray-900 transition-all">
+                        <img src="https://z-cdn-media.chatglm.cn/files/8c8d89fe-f1da-4471-b75f-82d921143ca1.jpg?auth_key=1880414878-81a3f75804ac46f886c2f023d48105a7-0-e2c385dcef84005a667bf99d9714c27d" alt="Thumb 1" class="w-full h-full object-contain p-1">
+                    </button>
+                    <button onclick="changeImage(1)" class="gallery-thumb bg-gray-50 rounded-xl overflow-hidden border-2 border-transparent aspect-square cursor-pointer hover:border-gray-400 transition-all">
+                        <img src="https://z-cdn-media.chatglm.cn/files/41e67ee5-8a9a-405d-ab83-0715db307a4f.jpg?auth_key=1880414878-c73fbbbc3d7a44508f120105e1e64e09-0-821470ab63ee944ae9057908a78a2a35" alt="Thumb 2" class="w-full h-full object-contain p-1">
+                    </button>
+                    <button onclick="changeImage(2)" class="gallery-thumb bg-gray-50 rounded-xl overflow-hidden border-2 border-transparent aspect-square cursor-pointer hover:border-gray-400 transition-all">
+                        <img src="https://z-cdn-media.chatglm.cn/files/c86106b9-d4c9-4144-b01d-cd51de111346.jpeg?auth_key=1880414878-7dfca4bc9fa34f889f20cd30df0e40e4-0-7c0e99bb90ded4e88b9b3b143fce1aa5" alt="Thumb 3" class="w-full h-full object-contain p-1">
+                    </button>
+                    <button onclick="changeImage(3)" class="gallery-thumb bg-gray-50 rounded-xl overflow-hidden border-2 border-transparent aspect-square cursor-pointer hover:border-gray-400 transition-all">
+                        <img src="https://z-cdn-media.chatglm.cn/files/aec1ba3c-e759-42c9-9be1-7db2139940ad.jpeg?auth_key=1880414878-514fe3874e7845b9b9fd89e1900350ed-0-73734039757b6139df28cbeeb999726a" alt="Thumb 4" class="w-full h-full object-contain p-1">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="slide-up flex flex-col">
+                <!-- Badges -->
+                <div class="flex flex-wrap items-center gap-2 mb-4">
+                    <span class="bg-green-50 text-green-700 text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1">
+                        <i data-lucide="truck" class="w-3 h-3"></i> Gratis Ongkir
+                    </span>
+                    <span class="bg-amber-50 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full">Terlaris</span>
+                    <span class="bg-gray-100 text-gray-600 text-xs font-medium px-3 py-1 rounded-full">SKU: QJCA03BK</span>
+                </div>
+
+                <!-- Title -->
+                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-tight mb-3">
+                    70mai OmniCam 3K Smart Dashcam
+                </h1>
+                <p class="text-gray-500 text-sm mb-4">Rotatable Voice Control • Night Vision • 3MP 3K • M310 Pro Black</p>
+
+                <!-- Rating & Sold -->
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="flex items-center gap-1">
+                        <div class="flex">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+                        </div>
+                        <span class="text-sm font-semibold">4.9/5</span>
+                    </div>
+                    <div class="w-px h-4 bg-gray-200"></div>
+                    <span class="text-sm text-gray-500">Terjual <strong class="text-gray-900">5.000+</strong></span>
+                </div>
+
+                <!-- Price -->
+                <div class="bg-gray-50 rounded-2xl p-5 mb-6 border border-gray-100">
+                    <div class="flex items-center gap-3 mb-1">
+                        <span class="bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded-lg">-25%</span>
+                        <span class="text-gray-400 line-through text-lg">Rp2.000.000</span>
+                    </div>
+                    <div class="text-3xl sm:text-4xl font-extrabold tracking-tight">Rp1.500.000</div>
+                    <p class="text-green-600 text-sm font-medium mt-1">Hemat Rp500.000</p>
+                </div>
+
+                <!-- Key Features -->
+                <div class="grid grid-cols-2 gap-3 mb-6">
+                    <div class="flex items-center gap-2.5 bg-gray-50 rounded-xl p-3 border border-gray-100">
+                        <i data-lucide="video" class="w-5 h-5 text-gray-700 flex-shrink-0"></i>
+                        <span class="text-sm font-medium">3K 1620P HD</span>
+                    </div>
+                    <div class="flex items-center gap-2.5 bg-gray-50 rounded-xl p-3 border border-gray-100">
+                        <i data-lucide="rotate-3d" class="w-5 h-5 text-gray-700 flex-shrink-0"></i>
+                        <span class="text-sm font-medium">Rotatable 360°</span>
+                    </div>
+                    <div class="flex items-center gap-2.5 bg-gray-50 rounded-xl p-3 border border-gray-100">
+                        <i data-lucide="moon" class="w-5 h-5 text-gray-700 flex-shrink-0"></i>
+                        <span class="text-sm font-medium">Super Night Vision</span>
+                    </div>
+                    <div class="flex items-center gap-2.5 bg-gray-50 rounded-xl p-3 border border-gray-100">
+                        <i data-lucide="mic" class="w-5 h-5 text-gray-700 flex-shrink-0"></i>
+                        <span class="text-sm font-medium">Voice Control</span>
+                    </div>
+                    <div class="flex items-center gap-2.5 bg-gray-50 rounded-xl p-3 border border-gray-100">
+                        <i data-lucide="wifi" class="w-5 h-5 text-gray-700 flex-shrink-0"></i>
+                        <span class="text-sm font-medium">Wi-Fi App Control</span>
+                    </div>
+                    <div class="flex items-center gap-2.5 bg-gray-50 rounded-xl p-3 border border-gray-100">
+                        <i data-lucide="shield-check" class="w-5 h-5 text-gray-700 flex-shrink-0"></i>
+                        <span class="text-sm font-medium">24H Parking Guard</span>
+                    </div>
+                </div>
+
+                <!-- Shipping -->
+                <div class="flex items-start gap-3 p-4 bg-blue-50 rounded-xl border border-blue-100 mb-6">
+                    <i data-lucide="package" class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"></i>
+                    <div>
+                        <p class="text-sm font-semibold text-blue-900">Gratis Ongkir • Dikirim dari Jakarta Pusat</p>
+                        <p class="text-xs text-blue-700 mt-0.5">DKI Jakarta 10210</p>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <button onclick="openOrderForm()" class="w-full bg-gray-900 text-white text-lg font-bold py-4 rounded-2xl hover:bg-gray-800 transition-all hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-gray-900/20">
+                    Pesan Sekarang
+                </button>
+                <p class="text-center text-xs text-gray-400 mt-3">Pembayaran aman • Garansi pengiriman</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT DESCRIPTION -->
+    <section id="deskripsi" class="py-16 lg:py-24 border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3 block">Tentang Produk</span>
+                <h2 class="text-3xl lg:text-5xl font-bold tracking-tight">Deskripsi Produk</h2>
+            </div>
+
+            <div class="prose max-w-none space-y-6">
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    <strong class="text-gray-900">70mai OmniCam 3K Smart Dashcam</strong> (M310 Pro) adalah dashcam kompak dengan kemampuan merekam video beresolusi tinggi hingga <strong>3K 2880×1620P</strong>. Dilengkapi sensor gambar <strong>GC2053 3MP</strong> dan lensa <strong>6-layer glass</strong> dengan aperture <strong>F1.55</strong>, dashcam ini menghadirkan gambar yang tajam dan jernih di segala kondisi — siang maupun malam.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Fitur unggulannya meliputi lensa yang dapat diputar <strong>360°</strong> sehingga fleksibel merekam dari berbagai sudut — depan, belakang, maupun interior kabin. Kontrol suara (<strong>Voice Control</strong>) membebaskan tangan Anda dari interaksi manual saat berkendara, sementara koneksi <strong>Wi-Fi</strong> memungkinkan preview, playback, dan pengaturan langsung melalui aplikasi <strong>70mai App</strong> di smartphone Anda.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Teknologi <strong>Super Night Vision</strong> dan <strong>WDR</strong> memastikan rekaman tetap terang dan detail saat berkendara di malam hari atau kondisi cahaya rendah. Fitur keamanan lengkap termasuk <strong>G-Sensor Collision Detection</strong> yang otomatis mengunci video saat terjadi tabrakan, <strong>Buffered Emergency Recording</strong>, <strong>Time-Lapse Recording</strong> untuk mode parkir hemat penyimpanan, serta <strong>24H Parking Protection</strong> (memerlukan hardware kit opsional).
+                </p>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Dengan desain kompak yang tidak menghalangi pandangan, rekaman loop otomatis tanpa henti, dan dukungan kartu MicroSD hingga <strong>256GB</strong>, dashcam ini adalah solusi lengkap untuk keamanan berkendara dan parkir Anda sehari-hari.
+                </p>
+
+                <!-- Highlight Box -->
+                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 mt-8">
+                    <h3 class="font-bold text-lg mb-4">Highlight Utama</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-sm text-gray-700">Resolusi video 3K (2880×1620P) dengan codec H.265</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-sm text-gray-700">Sensor GC2053 3MP + lensa 6-layer F1.55</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-sm text-gray-700">Lensa rotatable 360° — depan, belakang, interior</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-sm text-gray-700">Voice Control — hands-free saat berkendara</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-sm text-gray-700">Super Night Vision + WDR untuk kondisi gelap</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-sm text-gray-700">Wi-Fi 802.11 b/g/n — kontrol via 70mai App</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-sm text-gray-700">G-Sensor Collision Detection + auto-lock video</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-sm text-gray-700">Time-Lapse & 24H Parking Protection</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-sm text-gray-700">Loop Recording + MicroSD hingga 256GB</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-sm text-gray-700">Desain kompak — tidak menghalangi pandangan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Note -->
+                <div class="bg-amber-50 rounded-xl p-4 border border-amber-100 flex items-start gap-3">
+                    <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5"></i>
+                    <div>
+                        <p class="text-sm text-amber-800"><strong>Catatan:</strong> Kartu MicroSD <strong>tidak termasuk</strong> dalam paket pembelian. Disarankan menggunakan MicroSD Class 10 / U3 dengan kapasitas 16GB–256GB. Fitur 24H Parking Protection memerlukan hardware kit opsional (tidak termasuk).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section id="fitur" class="bg-gray-50 py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 lg:mb-16">
+                <span class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3 block">Fitur Unggulan</span>
+                <h2 class="text-3xl lg:text-5xl font-bold tracking-tight">Teknologi Terdepan<br class="hidden sm:block">untuk Keselamatan Anda</h2>
+            </div>
+
+            <!-- Feature 1 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
+                <div class="order-2 lg:order-1">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2 block">Resolusi Tinggi</span>
+                    <h3 class="text-2xl lg:text-4xl font-bold tracking-tight mb-4">3K HD Resolution</h3>
+                    <p class="text-gray-600 leading-relaxed mb-2">Dengan resolusi 3K 2880×1620P (1620P HD) dan sudut pandang 139°, dashcam ini menangkap setiap detail dengan jernih — termasuk plat nomor kendaraan lain dari jarak jauh. Codec H.265 menghasilkan file yang lebih kecil tanpa mengorbankan kualitas gambar.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Sensor gambar GC2053 3MP dikombinasikan dengan lensa 6-layer glass memastikan gambar tajam, akurat warna, dan minim distorsi di seluruh bidang pandang.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">3K 2880×1620P</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">FOV 139°</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">H.265 Codec</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">3MP GC2053</span>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <img src="https://z-cdn-media.chatglm.cn/files/41e67ee5-8a9a-405d-ab83-0715db307a4f.jpg?auth_key=1880414878-c73fbbbc3d7a44508f120105e1e64e09-0-821470ab63ee944ae9057908a78a2a35" alt="3K Resolution" class="w-full rounded-2xl shadow-xl feature-img">
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
+                <div>
+                    <img src="https://z-cdn-media.chatglm.cn/files/c86106b9-d4c9-4144-b01d-cd51de111346.jpeg?auth_key=1880414878-7dfca4bc9fa34f889f20cd30df0e40e4-0-7c0e99bb90ded4e88b9b3b143fce1aa5" alt="360 Rotatable" class="w-full rounded-2xl shadow-xl feature-img">
+                </div>
+                <div>
+                    <span class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2 block">Fleksibilitas</span>
+                    <h3 class="text-2xl lg:text-4xl font-bold tracking-tight mb-4">Small Body, Big Flexibility</h3>
+                    <p class="text-gray-600 leading-relaxed mb-2">Desain kompak yang tidak menghalangi pandangan pengemudi. Lensa dapat diputar 360° untuk merekam bagian depan, belakang, bahkan interior kabin — semua dari satu kamera.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Ukuran dashcam yang kecil membuatnya mudah dipasang di belakang rearview mirror tanpa mengganggu visibilitas. Rotasi lensa 360° memberikan fleksibilitas penuh untuk berbagai skenario perekaman.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">360° Rotatable</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">Compact Design</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">Multi-Angle</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
+                <div class="order-2 lg:order-1">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2 block">Malam Hari</span>
+                    <h3 class="text-2xl lg:text-4xl font-bold tracking-tight mb-4">Super Night Vision & WDR</h3>
+                    <p class="text-gray-600 leading-relaxed mb-2">Aperture besar F1.55 menangkap lebih banyak cahaya untuk rekaman malam yang jernih. Lensa 6-layer glass meminimalkan flare dan ghosting, menghasilkan gambar yang bersih di kondisi low-light.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Teknologi WDR mengoptimalkan detail area terang dan gelap secara bersamaan, menghasilkan gambar yang seimbang — tidak terlalu terang atau terlalu gelap saat melewati terowongan atau area kontras tinggi.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">F1.55 Aperture</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">6-Layer Glass</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">Super Night Vision</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">WDR Tech</span>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <img src="https://z-cdn-media.chatglm.cn/files/aec1ba3c-e759-42c9-9be1-7db2139940ad.jpeg?auth_key=1880414878-514fe3874e7845b9b9fd89e1900350ed-0-73734039757b6139df28cbeeb999726a" alt="Night Vision" class="w-full rounded-2xl shadow-xl feature-img">
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
+                <div>
+                    <img src="https://z-cdn-media.chatglm.cn/files/30a7ae53-82c8-47c2-84ef-4f4b865fed00.jpeg?auth_key=1880414878-ff13d77c6b4a4d2a96e2060d54dca41c-0-fd618d149e582bb2fe9e4adba4ade634" alt="Enhanced Functions" class="w-full rounded-2xl shadow-xl feature-img">
+                </div>
+                <div>
+                    <span class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2 block">Fungsi Lanjutan</span>
+                    <h3 class="text-2xl lg:text-4xl font-bold tracking-tight mb-4">Same Form, Enhanced Function</h3>
+                    <p class="text-gray-600 leading-relaxed mb-2">Mempertahankan bentuk yang ringkas namun dengan fitur yang ditingkatkan secara signifikan. Dilengkapi 2K WDR untuk gambar berkualitas tinggi, Buffered Emergency Recording yang menyimpan rekaman sebelum dan sesudah kejadian darurat, serta Collision Detection otomatis.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Dashcam ini juga mendukung Time-Lapse Recording untuk mode parkir yang efisien dan 24H Parking Protection untuk keamanan kendaraan saat parkir dalam waktu lama.</p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">2K WDR</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">Buffered Emergency</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">Collision Detect</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">24H Parking</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
+                <div class="order-2 lg:order-1">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2 block">Keamanan</span>
+                    <h3 class="text-2xl lg:text-4xl font-bold tracking-tight mb-4">G-Sensor Collision Detection</h3>
+                    <p class="text-gray-600 leading-relaxed mb-2">Sensor G mendeteksi tabrakan atau pengereman mendadak secara instan, lalu mengunci dan menyimpan video secara otomatis agar tidak tertimpa (overwrite) oleh rekaman baru. Video yang terkunci akan tersimpan aman sebagai bukti.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Fitur 24/7 Parking Protection tersedia dengan aksesori hardware kit opsional, memungkinkan dashcam tetap aktif mendeteksi guncangan saat kendaraan parkir dan mesin mati.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">G-Sensor</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">Auto-Lock Video</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">Parking Mode</span>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <img src="https://z-cdn-media.chatglm.cn/files/b419b0f1-5873-4ac1-9668-36837c376d5b.jpg?auth_key=1880414878-80c6629db70343799e1191f15da3609c-0-62724f6ff9ad954c983a1b62faa605b9" alt="Collision Detection" class="w-full rounded-2xl shadow-xl feature-img">
+                </div>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
+                <div>
+                    <img src="https://z-cdn-media.chatglm.cn/files/9ff1d7f5-c93d-467e-8083-2ee9bad28f49.jpg?auth_key=1880414878-b1b2fe279f534c8792dd69b60d920dad-0-69b94082523d4a565ed9e25d17fbc1c0" alt="Time Lapse" class="w-full rounded-2xl shadow-xl feature-img">
+                </div>
+                <div>
+                    <span class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2 block">Efisiensi</span>
+                    <h3 class="text-2xl lg:text-4xl font-bold tracking-tight mb-4">Time-Lapse Recording</h3>
+                    <p class="text-gray-600 leading-relaxed mb-2">Mode Time-Lapse merekam pada 1FPS untuk memantau parkir dalam waktu lama sambil menghemat penyimpanan dan daya secara drastis. Dibanding mode normal 30FPS, kapasitas rekaman jauh lebih besar tanpa kehilangan momen penting.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Sangat ideal untuk kendaraan yang parkir berjam-jam di area publik. Rekaman time-lapse tetap merekam aktivitas sekitar kendaraan meskipun dengan framerate rendah.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">1FPS Mode</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">Save Storage</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">Save Power</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 7 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2 block">Kemudahan</span>
+                    <h3 class="text-2xl lg:text-4xl font-bold tracking-tight mb-4">Seamless Recording, Effortless Control</h3>
+                    <p class="text-gray-600 leading-relaxed mb-2">Loop Recording memastikan rekaman berjalan tanpa henti — ketika kartu penuh, video lama secara otomatis ditimpa oleh video baru kecuali video yang terkunci. Mendukung kartu MicroSD hingga 256GB (disarankan Class 10/U3).</p>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Kontrol via aplikasi Wi-Fi 70mai App untuk preview real-time, playback, unduh video, dan pengaturan. Voice Control membebaskan tangan Anda — cukup beri perintah suara untuk mengambil foto atau mengunci video tanpa meninggalkan setir.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">Loop Recording</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">256GB TF</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">Wi-Fi App</span>
+                        <span class="bg-white text-sm font-medium px-3 py-1.5 rounded-full border border-gray-200">Voice Control</span>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <img src="https://z-cdn-media.chatglm.cn/files/ef8259da-318e-4958-bdc4-032537d351a2.jpeg?auth_key=1880414878-537d776bd344452ebe3d592e0a8da1e6-0-63936b50885a74af5cfc9d9acb1fe019" alt="Seamless Recording" class="w-full rounded-2xl shadow-xl feature-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIFICATIONS -->
+    <section id="spesifikasi" class="py-16 lg:py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3 block">Detail Produk</span>
+                <h2 class="text-3xl lg:text-5xl font-bold tracking-tight">Spesifikasi Lengkap</h2>
+            </div>
+            <div class="bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
+                <table class="w-full text-sm">
+                    <tbody>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700 bg-white w-2/5">Merek</td><td class="px-5 py-3.5 bg-white">70mai</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700">Model</td><td class="px-5 py-3.5">OmniCam 3K (M310 Pro)</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700 bg-white">Warna</td><td class="px-5 py-3.5 bg-white">Black</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700">Sensor Gambar</td><td class="px-5 py-3.5">GC2053 3MP</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700 bg-white">Resolusi Video</td><td class="px-5 py-3.5 bg-white">3K 2880×1620P / 2K 2560×1440P / 1080P 1920×1080</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700">Format Video</td><td class="px-5 py-3.5">MP4 (H.265)</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700 bg-white">Sudut Pandang</td><td class="px-5 py-3.5 bg-white">139° Wide Angle</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700">Aperture</td><td class="px-5 py-3.5">F1.55 Large Aperture</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700 bg-white">Lensa</td><td class="px-5 py-3.5 bg-white">6-Layer Glass, Rotatable 360°</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700">Night Vision</td><td class="px-5 py-3.5">Super Night Vision + WDR</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700 bg-white">Kontrol</td><td class="px-5 py-3.5 bg-white">Voice Control + Wi-Fi App (70mai App)</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700">Wi-Fi</td><td class="px-5 py-3.5">802.11 b/g/n 2.4GHz</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700 bg-white">Penyimpanan</td><td class="px-5 py-3.5 bg-white">MicroSD/TF, Class 10/U3, hingga 256GB (tidak termasuk)</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700">Loop Recording</td><td class="px-5 py-3.5">Ya (1/2/3 menit)</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700 bg-white">G-Sensor</td><td class="px-5 py-3.5 bg-white">Collision Detection + Auto-Lock</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700">Buffered Emergency Recording</td><td class="px-5 py-3.5">Ja</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700 bg-white">Time-Lapse Recording</td><td class="px-5 py-3.5 bg-white">Ja (1FPS)</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700">Parking Protection</td><td class="px-5 py-3.5">24H (memerlukan hardware kit opsional)</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700 bg-white">Daya</td><td class="px-5 py-3.5 bg-white">DC 5V/2A via Car Charger</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700">Suhu Operasional</td><td class="px-5 py-3.5">-10°C ~ 60°C</td></tr>
+                        <tr class="border-b border-gray-100"><td class="px-5 py-3.5 font-semibold text-gray-700 bg-white">Dimensi</td><td class="px-5 py-3.5 bg-white">88.7 × 47.3 × 35.8 mm</td></tr>
+                        <tr><td class="px-5 py-3.5 font-semibold text-gray-700">Berat</td><td class="px-5 py-3.5">±75g</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Package Contents -->
+            <div class="mt-8 bg-gray-50 rounded-2xl border border-gray-100 p-6 lg:p-8">
+                <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+                    <i data-lucide="package" class="w-5 h-5"></i> Isi Paket dalam Kotak
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div class="flex items-center gap-3 bg-white rounded-xl p-3 border border-gray-100">
+                        <div class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="camera" class="w-4 h-4 text-gray-600"></i>
+                        </div>
+                        <span class="text-sm">1× Dash Cam M310 Pro</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white rounded-xl p-3 border border-gray-100">
+                        <div class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="zap" class="w-4 h-4 text-gray-600"></i>
+                        </div>
+                        <span class="text-sm">1× Car Charger (5V/2A)</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white rounded-xl p-3 border border-gray-100">
+                        <div class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="cable" class="w-4 h-4 text-gray-600"></i>
+                        </div>
+                        <span class="text-sm">1× USB Cable</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white rounded-xl p-3 border border-gray-100">
+                        <div class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="square" class="w-4 h-4 text-gray-600"></i>
+                        </div>
+                        <span class="text-sm">1× Electrostatic Sticker</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white rounded-xl p-3 border border-gray-100">
+                        <div class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="mount" class="w-4 h-4 text-gray-600"></i>
+                        </div>
+                        <span class="text-sm">1× Mounting Bracket</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white rounded-xl p-3 border border-gray-100">
+                        <div class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="book-open" class="w-4 h-4 text-gray-600"></i>
+                        </div>
+                        <span class="text-sm">1× User Manual</span>
+                    </div>
+                </div>
+                <div class="mt-4 p-3 bg-amber-50 rounded-xl border border-amber-100 flex items-start gap-2">
+                    <i data-lucide="alert-triangle" class="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5"></i>
+                    <p class="text-xs text-amber-800"><strong>Tidak termasuk:</strong> Kartu MicroSD dan Hardware Kit (aksesori opsional untuk fitur 24H Parking Protection).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WARRANTY SECTION -->
+    <section id="garansi" class="py-16 lg:py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3 block">Perlindungan</span>
+                <h2 class="text-3xl lg:text-5xl font-bold tracking-tight">Garansi Pengiriman</h2>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-gray-200 p-6 lg:p-8 mb-6">
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="shield-alert" class="w-6 h-6 text-amber-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-1">Syarat Klaim Garansi / Asuransi Kerusakan</h3>
+                        <p class="text-sm text-gray-500">Garansi pengiriman untuk kerusakan/cacat saat diterima. <strong>Bukan garansi resmi produk</strong>, hanya garansi pengiriman.</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4 p-4 bg-red-50 rounded-xl border border-red-100">
+                        <div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <i data-lucide="video" class="w-4 h-4 text-red-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-red-900 mb-1">Video Unboxing Tanpa Jeda</h4>
+                            <p class="text-sm text-red-700">Video unboxing tanpa jeda yang memperlihatkan kerusakan barang dan kondisi paket saat diterima.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-4 bg-red-50 rounded-xl border border-red-100">
+                        <div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <i data-lucide="camera" class="w-4 h-4 text-red-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-red-900 mb-1">Foto Resi & Paket</h4>
+                            <p class="text-sm text-red-700">Foto label pengiriman yang tertempel di paket harus terlihat jelas.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-gray-900 text-white rounded-xl text-center">
+                        <p class="font-semibold">⚠️ Jika tidak memenuhi kedua syarat di atas, kerusakan tidak bisa diklaim.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
+                    <i data-lucide="truck" class="w-8 h-8 text-green-600 mx-auto mb-2"></i>
+                    <h4 class="font-semibold text-sm mb-1">Gratis Ongkir</h4>
+                    <p class="text-xs text-gray-500">Pengiriman dari Jakarta</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
+                    <i data-lucide="shield-check" class="w-8 h-8 text-blue-600 mx-auto mb-2"></i>
+                    <h4 class="font-semibold text-sm mb-1">Garansi Pengiriman</h4>
+                    <p class="text-xs text-gray-500">Perlindungan kerusakan</p>
+                </div>
+                <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
+                    <i data-lucide="hash" class="w-8 h-8 text-purple-600 mx-auto mb-2"></i>
+                    <h4 class="font-semibold text-sm mb-1">No. Pesanan</h4>
+                    <p class="text-xs text-gray-500">Bukti pemesanan resmi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BOTTOM -->
+    <section class="py-16 lg:py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-5xl font-bold tracking-tight mb-4">Siap Melindungi Perjalanan Anda?</h2>
+            <p class="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">Pesan sekarang dan dapatkan dashcam terbaik dengan garansi pengiriman. Gratis ongkir ke seluruh Indonesia.</p>
+            <div class="inline-block bg-gray-50 rounded-2xl p-6 border border-gray-100 mb-8">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded-lg">-25%</span>
+                    <span class="text-gray-400 line-through text-lg">Rp2.000.000</span>
+                </div>
+                <div class="text-4xl font-extrabold tracking-tight">Rp1.500.000</div>
+            </div>
+            <div>
+                <button onclick="openOrderForm()" class="bg-gray-900 text-white text-lg font-bold px-12 py-4 rounded-2xl hover:bg-gray-800 transition-all hover:scale-105 active:scale-95 shadow-xl shadow-gray-900/20">
+                    Pesan Sekarang
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                        <span class="text-gray-900 font-bold text-sm">J</span>
+                    </div>
+                    <span class="font-bold text-lg">Jerry Store</span>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">Toko terpercaya untuk kebutuhan otomotif Anda. Menyediakan produk berkualitas dengan garansi pengiriman dan layanan pelanggan yang responsif.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-400">
+                    <i data-lucide="map-pin" class="w-4 h-4 flex-shrink-0"></i>
+                    <span>Jakarta Pusat, DKI Jakarta 10210</span>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-sm uppercase tracking-wider text-gray-300 mb-4">Metode Pembayaran</h4>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between p-2.5 bg-white/5 rounded-lg">
+                        <div>
+                            <span class="text-xs text-gray-400 block">BCA</span>
+                            <span class="text-sm font-mono font-medium">833-307-0942</span>
+                        </div>
+                        <button onclick="copyText('8333070942','BCA')" class="copy-btn p-1.5 rounded-md border border-white/20 hover:bg-white hover:text-gray-900 transition-all" title="Salin">
+                            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center justify-between p-2.5 bg-white/5 rounded-lg">
+                        <div>
+                            <span class="text-xs text-gray-400 block">Bank Jago</span>
+                            <span class="text-sm font-mono font-medium">1083-3482-0113</span>
+                        </div>
+                        <button onclick="copyText('108334820113','Bank Jago')" class="copy-btn p-1.5 rounded-md border border-white/20 hover:bg-white hover:text-gray-900 transition-all" title="Salin">
+                            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center justify-between p-2.5 bg-white/5 rounded-lg">
+                        <div>
+                            <span class="text-xs text-gray-400 block">Go-Pay / Link Aja / OVO</span>
+                            <span class="text-sm font-mono font-medium">0852-1608-9740</span>
+                        </div>
+                        <button onclick="copyText('085216089740','E-Wallet')" class="copy-btn p-1.5 rounded-md border border-white/20 hover:bg-white hover:text-gray-900 transition-all" title="Salin">
+                            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                    <p class="text-xs text-gray-500">a/n <strong class="text-gray-300">JERRY</strong></p>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-sm uppercase tracking-wider text-gray-300 mb-4">Kontak & Operasional</h4>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-gray-400 block">Telepon</span>
+                            <span class="text-sm font-medium">+62 851-8322-6514</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="clock" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-gray-400 block">Jam Operasional</span>
+                            <span class="text-sm font-medium">09.00 - 17.00 WIB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-sm uppercase tracking-wider text-gray-300 mb-4">Informasi</h4>
+                <div class="space-y-2.5 text-sm text-gray-400">
+                    <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 flex-shrink-0"></i>Gratis Ongkir</div>
+                    <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 flex-shrink-0"></i>Garansi Pengiriman</div>
+                    <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 flex-shrink-0"></i>Pembayaran Aman</div>
+                    <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 flex-shrink-0"></i>No. Pesanan Resmi</div>
+                    <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 flex-shrink-0"></i>Proses 24 Jam</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-white/10 mt-10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-gray-500">© 2026 Jerry Store. All rights reserved.</p>
+            <p class="text-xs text-gray-600">Garansi pengiriman bukan garansi resmi produk</p>
+        </div>
+    </div>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-gray-200 p-3 z-40 lg:hidden">
+    <button onclick="openOrderForm()" class="w-full bg-gray-900 text-white font-bold py-3.5 rounded-2xl hover:bg-gray-800 transition-all active:scale-[0.98] flex items-center justify-center gap-2">
+        <span>Pesan Sekarang</span>
+        <span class="text-sm font-medium opacity-80">• Rp1.500.000</span>
+    </button>
+</div>
+
+<!-- ORDER FORM MODAL -->
+<div id="orderModal" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm modal-overlay" onclick="closeOrderForm()"></div>
+    <div class="relative h-full overflow-y-auto">
+        <div class="min-h-full flex items-start sm:items-center justify-center p-4 pt-8 sm:pt-4">
+            <div class="bg-white rounded-2xl w-full max-w-lg shadow-2xl modal-content my-4 sm:my-8">
+                <div class="sticky top-0 bg-white rounded-t-2xl border-b border-gray-100 p-5 flex items-center justify-between z-10">
+                    <div>
+                        <h3 class="text-lg font-bold">Form Pemesanan</h3>
+                        <p class="text-xs text-gray-500">Lengkapi data untuk melakukan pemesanan</p>
+                    </div>
+                    <button onclick="closeOrderForm()" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <div class="p-5 space-y-5">
+                    <div class="bg-gray-50 rounded-xl p-4 border border-gray-100">
+                        <p class="text-sm font-semibold mb-1">70mai OmniCam 3K Smart Dashcam</p>
+                        <p class="text-xs text-gray-500 mb-2">SKU: QJCA03BK</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <button onclick="decreaseQty()" class="w-8 h-8 bg-white border border-gray-200 rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors">
+                                    <i data-lucide="minus" class="w-4 h-4"></i>
+                                </button>
+                                <span id="qtyDisplay" class="w-10 text-center font-semibold">1</span>
+                                <button onclick="increaseQty()" class="w-8 h-8 bg-white border border-gray-200 rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors">
+                                    <i data-lucide="plus" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                            <span id="priceDisplay" class="text-lg font-bold">Rp1.500.000</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-sm font-semibold mb-3 flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i> Alamat Pengiriman
+                        </h4>
+                        <div class="space-y-3">
+                            <div>
+                                <label class="text-xs font-medium text-gray-600 mb-1 block">Nama Penerima <span class="text-red-500">*</span></label>
+                                <input id="namaPenerima" type="text" placeholder="Nama lengkap penerima" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm transition-all">
+                            </div>
+                            <div>
+                                <label class="text-xs font-medium text-gray-600 mb-1 block">No. WhatsApp <span class="text-red-500">*</span></label>
+                                <input id="noWhatsApp" type="tel" placeholder="08xxxxxxxxxx" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm transition-all">
+                            </div>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="text-xs font-medium text-gray-600 mb-1 block">Provinsi <span class="text-red-500">*</span></label>
+                                    <select id="provinsi" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm transition-all bg-white">
+                                        <option value="">Pilih Provinsi</option>
+                                        <option value="Aceh">Aceh</option><option value="Sumatera Utara">Sumatera Utara</option><option value="Sumatera Barat">Sumatera Barat</option><option value="Riau">Riau</option><option value="Jambi">Jambi</option><option value="Sumatera Selatan">Sumatera Selatan</option><option value="Bengkulu">Bengkulu</option><option value="Lampung">Lampung</option><option value="Kepulauan Bangka Belitung">Kepulauan Bangka Belitung</option><option value="Kepulauan Riau">Kepulauan Riau</option><option value="DKI Jakarta">DKI Jakarta</option><option value="Jawa Barat">Jawa Barat</option><option value="Jawa Tengah">Jawa Tengah</option><option value="DI Yogyakarta">DI Yogyakarta</option><option value="Jawa Timur">Jawa Timur</option><option value="Banten">Banten</option><option value="Bali">Bali</option><option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option><option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option><option value="Kalimantan Barat">Kalimantan Barat</option><option value="Kalimantan Tengah">Kalimantan Tengah</option><option value="Kalimantan Selatan">Kalimantan Selatan</option><option value="Kalimantan Timur">Kalimantan Timur</option><option value="Kalimantan Utara">Kalimantan Utara</option><option value="Sulawesi Utara">Sulawesi Utara</option><option value="Sulawesi Tengah">Sulawesi Tengah</option><option value="Sulawesi Selatan">Sulawesi Selatan</option><option value="Sulawesi Tenggara">Sulawesi Tenggara</option><option value="Gorontalo">Gorontalo</option><option value="Sulawesi Barat">Sulawesi Barat</option><option value="Maluku">Maluku</option><option value="Maluku Utara">Maluku Utara</option><option value="Papua">Papua</option><option value="Papua Barat">Papua Barat</option><option value="Papua Selatan">Papua Selatan</option><option value="Papua Tengah">Papua Tengah</option><option value="Papua Pegunungan">Papua Pegunungan</option><option value="Papua Barat Daya">Papua Barat Daya</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="text-xs font-medium text-gray-600 mb-1 block">Kota/Kabupaten <span class="text-red-500">*</span></label>
+                                    <input id="kota" type="text" placeholder="Kota/Kabupaten" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm transition-all">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="text-xs font-medium text-gray-600 mb-1 block">Kecamatan <span class="text-red-500">*</span></label>
+                                    <input id="kecamatan" type="text" placeholder="Kecamatan" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm transition-all">
+                                </div>
+                                <div>
+                                    <label class="text-xs font-medium text-gray-600 mb-1 block">Kode Pos <span class="text-red-500">*</span></label>
+                                    <input id="kodePos" type="text" placeholder="Kode Pos" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm transition-all">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="text-xs font-medium text-gray-600 mb-1 block">Alamat Lengkap <span class="text-red-500">*</span></label>
+                                <textarea id="alamatLengkap" rows="3" placeholder="Nama jalan, nomor rumah, RT/RW, kelurahan" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm transition-all resize-none"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-sm font-semibold mb-3 flex items-center gap-2">
+                            <i data-lucide="credit-card" class="w-4 h-4"></i> Metode Pembayaran
+                        </h4>
+                        <div class="space-y-3">
+                            <div>
+                                <label class="text-xs font-medium text-gray-600 mb-1 block">Pilih Metode <span class="text-red-500">*</span></label>
+                                <select id="metodePembayaran" onchange="updatePaymentDetails()" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm transition-all bg-white">
+                                    <option value="">Pilih metode pembayaran</option>
+                                    <option value="BCA Transfer">BCA Transfer - 833-307-0942 (a/n JERRY)</option>
+                                    <option value="Bank Jago Transfer">Bank Jago Transfer - 1083-3482-0113 (a/n JERRY)</option>
+                                    <option value="Go-Pay">Go-Pay - 0852-1608-9740 (a/n JERRY)</option>
+                                    <option value="Link Aja">Link Aja - 0852-1608-9740 (a/n JERRY)</option>
+                                    <option value="OVO">OVO - 0852-1608-9740 (a/n JERRY)</option>
+                                </select>
+                            </div>
+                            <div id="paymentDetails" class="hidden bg-blue-50 rounded-xl p-4 border border-blue-100">
+                                <p class="text-xs text-blue-600 font-semibold mb-2">Detail Rekening Tujuan:</p>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p id="paymentBank" class="text-sm font-semibold"></p>
+                                        <p id="paymentAccount" class="text-lg font-mono font-bold"></p>
+                                        <p class="text-xs text-gray-500">a/n <strong>JERRY</strong></p>
+                                    </div>
+                                    <button onclick="copyAccountNumber()" class="px-3 py-2 bg-white rounded-lg border border-blue-200 text-xs font-semibold text-blue-700 hover:bg-blue-100 transition-colors flex items-center gap-1">
+                                        <i data-lucide="copy" class="w-3 h-3"></i> Salin
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="text-xs font-medium text-gray-600 mb-1 block">Nama Pengirim / Nama Rekening <span class="text-red-500">*</span></label>
+                                <input id="namaRekening" type="text" placeholder="Untuk verifikasi pembayaran" class="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm transition-all">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-amber-50 rounded-xl p-4 border border-amber-100">
+                        <p class="text-xs text-amber-800"><strong>Penting:</strong> Harap simpan No. Pesanan Anda sebagai bukti pemesanan. Untuk klaim garansi pengiriman, diperlukan video unboxing tanpa jeda dan foto resi paket.</p>
+                    </div>
+
+                    <button onclick="submitOrder()" id="submitBtn" class="w-full bg-gray-900 text-white font-bold py-3.5 rounded-2xl hover:bg-gray-800 transition-all active:scale-[0.98] flex items-center justify-center gap-2">
+                        <span>Konfirmasi Pesanan</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONFIRMATION MODAL -->
+<div id="confirmModal" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm modal-overlay" onclick="closeConfirmation()"></div>
+    <div class="relative h-full overflow-y-auto">
+        <div class="min-h-full flex items-start sm:items-center justify-center p-4 pt-8 sm:pt-4">
+            <div class="bg-white rounded-2xl w-full max-w-md shadow-2xl modal-content my-4 sm:my-8 overflow-hidden">
+                <div class="bg-green-500 p-6 text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i data-lucide="check" class="w-8 h-8 text-green-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Pesanan Berhasil Dibuat!</h3>
+                    <p class="text-green-100 text-sm mt-1">Terima kasih! Pesanan Anda telah kami terima dan akan kami proses segera.</p>
+                </div>
+                <div class="p-5 space-y-4">
+                    <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 text-center">
+                        <p class="text-xs text-gray-500 mb-1">Nomor Pesanan</p>
+                        <p id="confirmOrderNo" class="text-2xl font-extrabold tracking-wider"></p>
+                        <button onclick="copyOrderNo()" class="mt-2 text-xs font-semibold text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-1 mx-auto">
+                            <i data-lucide="copy" class="w-3 h-3"></i> Salin Nomor Pesanan
+                        </button>
+                        <p class="text-xs text-gray-400 mt-2">Simpan nomor ini sebagai bukti pemesanan Anda</p>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between py-2 border-b border-gray-100">
+                            <span class="text-gray-500">Produk</span>
+                            <span class="font-semibold text-right">70mai OmniCam 3K Smart Dashcam</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-100">
+                            <span class="text-gray-500">SKU</span>
+                            <span class="font-semibold">QJCA03BK</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-100">
+                            <span class="text-gray-500">Qty</span>
+                            <span id="confirmQty" class="font-semibold"></span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-100">
+                            <span class="text-gray-500">Metode</span>
+                            <span id="confirmMethod" class="font-semibold"></span>
+                        </div>
+                        <div class="flex justify-between py-2">
+                            <span class="text-gray-500 font-semibold">Total Pembayaran</span>
+                            <span id="confirmTotal" class="text-lg font-extrabold"></span>
+                        </div>
+                    </div>
+                    <div class="bg-red-50 rounded-xl p-4 border border-red-100">
+                        <p class="text-xs font-semibold text-red-800 mb-2">⚠️ Syarat Klaim Garansi Pengiriman:</p>
+                        <ul class="text-xs text-red-700 space-y-1">
+                            <li>• Video unboxing tanpa jeda yang memperlihatkan kerusakan</li>
+                            <li>• Foto resi & paket yang tertempel jelas</li>
+                            <li>• Tanpa kedua syarat di atas, kerusakan tidak bisa diklaim</li>
+                        </ul>
+                    </div>
+                    <div class="bg-amber-50 rounded-xl p-3 border border-amber-100 text-center">
+                        <p class="text-xs text-amber-800">Pesanan akan diproses setelah pembayaran dikonfirmasi dalam 24 jam.</p>
+                    </div>
+                    <button onclick="closeConfirmation()" class="w-full bg-gray-900 text-white font-bold py-3.5 rounded-2xl hover:bg-gray-800 transition-all active:scale-[0.98]">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="fixed bottom-20 lg:bottom-8 left-1/2 -translate-x-1/2 z-[60] hidden">
+    <div class="bg-gray-900 text-white text-sm font-medium px-5 py-3 rounded-xl shadow-xl flex items-center gap-2">
+        <i data-lucide="check-circle" class="w-4 h-4 text-green-400"></i>
+        <span id="toastMessage"></span>
+    </div>
+</div>
+
+<script>
+    lucide.createIcons();
+
+    const product = { name: '70mai OmniCam 3K Smart Dashcam', sku: 'QJCA03BK', price: 1500000, originalPrice: 2000000, discount: 25 };
+
+    const galleryImages = [
+        'https://z-cdn-media.chatglm.cn/files/8c8d89fe-f1da-4471-b75f-82d921143ca1.jpg?auth_key=1880414878-81a3f75804ac46f886c2f023d48105a7-0-e2c385dcef84005a667bf99d9714c27d',
+        'https://z-cdn-media.chatglm.cn/files/41e67ee5-8a9a-405d-ab83-0715db307a4f.jpg?auth_key=1880414878-c73fbbbc3d7a44508f120105e1e64e09-0-821470ab63ee944ae9057908a78a2a35',
+        'https://z-cdn-media.chatglm.cn/files/c86106b9-d4c9-4144-b01d-cd51de111346.jpeg?auth_key=1880414878-7dfca4bc9fa34f889f20cd30df0e40e4-0-7c0e99bb90ded4e88b9b3b143fce1aa5',
+        'https://z-cdn-media.chatglm.cn/files/aec1ba3c-e759-42c9-9be1-7db2139940ad.jpeg?auth_key=1880414878-514fe3874e7845b9b9fd89e1900350ed-0-73734039757b6139df28cbeeb999726a'
+    ];
+
+    let currentImageIndex = 0;
+    let quantity = 1;
+
+    function changeImage(index) {
+        currentImageIndex = index;
+        const mainImg = document.getElementById('mainImage');
+        mainImg.style.opacity = '0';
+        setTimeout(() => { mainImg.src = galleryImages[index]; mainImg.style.opacity = '1'; }, 200);
+        document.querySelectorAll('.gallery-thumb').forEach((thumb, i) => {
+            thumb.classList.toggle('border-gray-900', i === index);
+            thumb.classList.toggle('border-transparent', i !== index);
+        });
+    }
+
+    function increaseQty() { if (quantity < 10) { quantity++; updatePriceDisplay(); } }
+    function decreaseQty() { if (quantity > 1) { quantity--; updatePriceDisplay(); } }
+    function updatePriceDisplay() {
+        document.getElementById('qtyDisplay').textContent = quantity;
+        document.getElementById('priceDisplay').textContent = formatCurrency(product.price * quantity);
+    }
+    function formatCurrency(num) { return 'Rp' + num.toLocaleString('id-ID'); }
+
+    function openOrderForm() { document.getElementById('orderModal').classList.remove('hidden'); document.body.style.overflow = 'hidden'; quantity = 1; updatePriceDisplay(); }
+    function closeOrderForm() { document.getElementById('orderModal').classList.add('hidden'); document.body.style.overflow = ''; }
+    function closeConfirmation() { document.getElementById('confirmModal').classList.add('hidden'); document.body.style.overflow = ''; }
+
+    const paymentAccounts = {
+        'BCA Transfer': { bank: 'BCA', account: '833-307-0942', raw: '8333070942' },
+        'Bank Jago Transfer': { bank: 'Bank Jago', account: '1083-3482-0113', raw: '108334820113' },
+        'Go-Pay': { bank: 'Go-Pay', account: '0852-1608-9740', raw: '085216089740' },
+        'Link Aja': { bank: 'Link Aja', account: '0852-1608-9740', raw: '085216089740' },
+        'OVO': { bank: 'OVO', account: '0852-1608-9740', raw: '085216089740' }
+    };
+    let selectedPaymentRaw = '';
+
+    function updatePaymentDetails() {
+        const method = document.getElementById('metodePembayaran').value;
+        const detailsDiv = document.getElementById('paymentDetails');
+        if (method && paymentAccounts[method]) {
+            const info = paymentAccounts[method];
+            document.getElementById('paymentBank').textContent = info.bank;
+            document.getElementById('paymentAccount').textContent = info.account;
+            selectedPaymentRaw = info.raw;
+            detailsDiv.classList.remove('hidden');
+        } else { detailsDiv.classList.add('hidden'); selectedPaymentRaw = ''; }
+    }
+
+    function copyAccountNumber() { copyText(selectedPaymentRaw, 'Nomor rekening'); }
+
+    function generateOrderNumber() {
+        const now = new Date();
+        return `JRY-${now.getFullYear()}${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}-${Math.floor(10000+Math.random()*90000)}`;
+    }
+
+    async function submitOrder() {
+        const nama = document.getElementById('namaPenerima').value.trim();
+        const wa = document.getElementById('noWhatsApp').value.trim();
+        const prov = document.getElementById('provinsi').value;
+        const kota = document.getElementById('kota').value.trim();
+        const kec = document.getElementById('kecamatan').value.trim();
+        const kpos = document.getElementById('kodePos').value.trim();
+        const alamat = document.getElementById('alamatLengkap').value.trim();
+        const metode = document.getElementById('metodePembayaran').value;
+        const namaRek = document.getElementById('namaRekening').value.trim();
+
+        if (!nama) return showFieldError('namaPenerima', 'Nama penerima wajib diisi');
+        if (!wa) return showFieldError('noWhatsApp', 'No. WhatsApp wajib diisi');
+        if (!prov) return showFieldError('provinsi', 'Provinsi wajib dipilih');
+        if (!kota) return showFieldError('kota', 'Kota/Kabupaten wajib diisi');
+        if (!kec) return showFieldError('kecamatan', 'Kecamatan wajib diisi');
+        if (!kpos) return showFieldError('kodePos', 'Kode Pos wajib diisi');
+        if (!alamat) return showFieldError('alamatLengkap', 'Alamat lengkap wajib diisi');
+        if (!metode) return showFieldError('metodePembayaran', 'Metode pembayaran wajib dipilih');
+        if (!namaRek) return showFieldError('namaRekening', 'Nama rekening wajib diisi');
+
+        const orderNo = generateOrderNumber();
+        const totalPrice = product.price * quantity;
+        const orderData = { no_pesanan: orderNo, nama_produk: product.name, sku: product.sku, harga: totalPrice.toString(), qty: quantity.toString(), nama_penerima: nama, no_whatsapp: wa, provinsi: prov, kota: kota, kecamatan: kec, kode_pos: kpos, alamat_lengkap: alamat, metode_pembayaran: metode, nama_rekening: namaRek };
+
+        const btn = document.getElementById('submitBtn');
+        btn.disabled = true;
+        btn.innerHTML = '<svg class="animate-spin w-5 h-5" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg><span>Memproses...</span>';
+
+        try {
+            await fetch('https://script.google.com/macros/s/AKfycbwjUVDAE4MZbro6UABuoqDQ1s9q1jCb2zvUS9Cp1oqSUWrSVFnitqLrlePnSw5nee73Ow/exec', { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(orderData) });
+            fbq('track', 'Purchase', { value: totalPrice, currency: 'IDR', content_name: product.name, content_ids: [product.sku], content_type: 'product', num_items: quantity });
+        } catch (e) { console.log('Webhook error:', e); }
+
+        closeOrderForm();
+        showConfirmation(orderNo, metode, quantity, totalPrice);
+        btn.disabled = false;
+        btn.innerHTML = '<span>Konfirmasi Pesanan</span>';
+        ['namaPenerima','noWhatsApp','kota','kecamatan','kodePos','alamatLengkap','namaRekening'].forEach(id => document.getElementById(id).value = '');
+        document.getElementById('provinsi').value = '';
+        document.getElementById('metodePembayaran').value = '';
+        document.getElementById('paymentDetails').classList.add('hidden');
+        quantity = 1; updatePriceDisplay();
+    }
+
+    function showFieldError(fieldId, message) {
+        const field = document.getElementById(fieldId);
+        field.style.borderColor = '#ef4444'; field.focus(); showToast(message);
+        setTimeout(() => { field.style.borderColor = ''; }, 3000);
+    }
+
+    function showConfirmation(orderNo, method, qty, total) {
+        document.getElementById('confirmOrderNo').textContent = orderNo;
+        document.getElementById('confirmQty').textContent = qty;
+        document.getElementById('confirmMethod').textContent = method;
+        document.getElementById('confirmTotal').textContent = formatCurrency(total);
+        document.getElementById('confirmModal').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+        lucide.createIcons();
+    }
+
+    function copyText(text, label) {
+        navigator.clipboard.writeText(text).then(() => { showToast(`${label} berhasil disalin!`); }).catch(() => {
+            const ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+            showToast(`${label} berhasil disalin!`);
+        });
+    }
+
+    function copyOrderNo() { copyText(document.getElementById('confirmOrderNo').textContent, 'Nomor pesanan'); }
+
+    function showToast(message) {
+        const toast = document.getElementById('toast');
+        document.getElementById('toastMessage').textContent = message;
+        toast.classList.remove('hidden');
+        toast.querySelector('div').className = 'bg-gray-900 text-white text-sm font-medium px-5 py-3 rounded-xl shadow-xl flex items-center gap-2 toast-in';
+        clearTimeout(window._toastTimer);
+        window._toastTimer = setTimeout(() => { toast.querySelector('div').classList.remove('toast-in'); toast.querySelector('div').classList.add('toast-out'); setTimeout(() => { toast.classList.add('hidden'); }, 300); }, 2500);
+    }
+
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('slide-up'); observer.unobserve(entry.target); } }); }, { threshold: 0.1 });
+    document.querySelectorAll('section > div').forEach(el => { el.style.opacity = '0'; observer.observe(el); });
+    setTimeout(() => { lucide.createIcons(); }, 100);
+</script>
+
+</body>
+</html>
